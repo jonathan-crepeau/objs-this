@@ -134,17 +134,47 @@ const taco = () => {
 
 // 3. Add a conditional inside of the 'setInterval' that checks to see if teh value has reached 0. If yes, console log 'game over' and clear the interval:
 
-const game = {
-  timer: 3,
-  start() {
-    const gameTimer = setInterval(() => {
-      if (game.timer === 0) {
-        console.log('game over');
-        clearInterval(gameTimer);
-      } else {
-        console.log('hi', this);
-        game.timer -= 1;
-      }
-    }, 1000);
-  },
-};
+// const game = {
+//   timer: 3,
+//   start() {
+//     const gameTimer = setInterval(() => {
+//       if (game.timer === 0) {
+//         console.log('game over');
+//         clearInterval(gameTimer);
+//       } else {
+//         console.log('hi', this);
+//         game.timer -= 1;
+//       }
+//     }, 1000);
+//   },
+// };
+
+// NOTE -- if using the clearInterval method, you MUST include it in a block statement (in the example above, we have it in the block statement for the conditional 'if' statement). When I re-wrote this to have no block statement brackets with the conditional if/else statement, clearInterval() would fire the 1st time through the setInterval() method ... even if the conditional if statement was not met.
+
+// SECTION - Player Object Activity
+
+// 1. Create a player object
+// 2. Add properties of score, name, and lives.
+// 3. Make the score a value of ten.
+// 4. use prompt to get the users name in the name property.
+// 5. set the lives property equal to 3.
+// 6. Add a method that increases the persons score.
+// 7. Add a method that will either decrease or increase the lives depending on an argument you pass that method.
+// 8. Access all the properties using dot notation, and bracket notation.
+
+// const player = {
+//   score: 10,
+//   name() {
+//     player.name = prompt('Please enter your name:');
+//   },
+//   lives: 3,
+//   increaseScore() {
+//     player.score += 1;
+//   },
+//   livesChange(input) {
+//     if (input === 'increase')
+//       player.lives += 1;
+//     if (input === 'decrease')
+//       player.lives -= 1;
+//   }
+// }
