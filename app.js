@@ -178,3 +178,62 @@ const taco = () => {
 //       player.lives -= 1;
 //   }
 // }
+
+
+// SECTION - for in loops
+
+// const jonathan = {
+//   givenName: 'Jonathan',
+//   height: '6\'2"',
+//   hairColor: 'ginger',
+//   eyeColor: 'brown',
+// }
+
+// const family = [
+//   'Jonathan',
+//   'Luna',
+//   'Jeremy',
+// ]
+
+// NOTE Activy #1
+
+// const movie = { title: "Eraserhead", director: "David Lynch", year: 1978 };
+
+// * Use a **for..in** loop to print all the keys of the movie object
+
+// for (const key in movie) {
+//   console.log(key);
+// }
+
+// * Use a **for..in** loop to print all the values of the movie object
+
+// for (const key in movie) {
+//   console.log(movie[key]);
+// }
+
+// NOTE Activity #2
+
+const movies = [
+  { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
+  { title: "Eraserhead", director: "David Lynch", year: 1978 },
+  { title: "Dayereh", director: "Jafar Panahi", year: 2000 },
+  { title: "Dayereh", director: "Jafar Panahi", year: 2000 },
+];
+
+// 1. * Create an empty object. Leverage the fact that Keys are unique in an object. Loop over the movies array and add the movie titles as keys in the object. This will consequently omit the duplicate movie. At the same time, give each a value of **0** in the object.
+// 2. * The result should be this: `{"L'Avventura": 0, "Eraserhead": 0, "Dayereh": 0}`
+
+const emptyObject = {};
+
+for (let a = 0; a < movies.length; a++) {
+  // console.log('title: ' + movies[a].title);
+  emptyObject[movies[a].title] = 0;
+}
+
+// 3. * Use **Object.keys** loop to print all the values of the movies object.
+
+let keys = Object.keys(movies);
+
+for (let b = 0; b < Object.keys(movies).length; b++) {
+  console.log(movies[keys[b]]);
+}
