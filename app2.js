@@ -95,32 +95,60 @@ function welcomeUser() {
 
 // 3. add a conditional inside of the setInterval that checks to see if the value has reached 0, if it has console.log the "gameover". Then clear the interval. Hint: "look up how do I stop an interval or 'clear!' an interval".
 
-const game = {
-  timer: 10,
-  start() {
-    const gameTimer = setInterval(() => {
-      if (game.timer == 0) {
-        console.log('gameover');
-        clearInterval(gameTimer);
-      } else {
-        console.log('hi', this);
-        game.timer -= 1;
-      }
-    }, 1000);
-  },
-};
+// const game = {
+//   timer: 10,
+//   start() {
+//     const gameTimer = setInterval(() => {
+//       if (game.timer == 0) {
+//         console.log('gameover');
+//         clearInterval(gameTimer);
+//       } else {
+//         console.log('hi', this);
+//         game.timer -= 1;
+//       }
+//     }, 1000);
+//   },
+// };
 
 
-const player = {
-  score: 10,
-  name: prompt('What is your name?'),
-  lives: 3,
-  increaseScore() { player.score += 1},
-  changeLives(input) {
-    if (input == 'up') {
-      player.lives += 1;
-    } else if (input == 'down') {
-      player.lives -= 1;
-    }
-  }
-}
+// const player = {
+//   score: 10,
+//   name: prompt('What is your name?'),
+//   lives: 3,
+//   increaseScore() { player.score += 1},
+//   changeLives(input) {
+//     if (input == 'up') {
+//       player.lives += 1;
+//     } else if (input == 'down') {
+//       player.lives -= 1;
+//     }
+//   }
+// }
+
+// const movie = {
+//   title: "L'Avventura",
+//   director: "Michelangelo Antonioni",
+//   year: 1960,
+// };
+
+// 1. Write a JavaScript program to list the properties of a JavaScript object.
+
+// const checkObjKeys = (obj) => {
+//   console.log(Object.keys(obj));
+// }
+
+// 2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property
+
+// function deleteRollno(obj) {
+//   console.log(obj);
+//   if (obj.rollno) {
+//     delete obj.rollno;
+//   }
+//   console.log(obj);
+// }
+
+ // 3. Write a JavaScript program to get the length of a JavaScript object.
+
+//  function objectLength(obj) {
+//    console.log(Object.keys(obj).length);
+//  }
